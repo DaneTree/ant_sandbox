@@ -1,0 +1,56 @@
+.flex-container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 10px 0px 10px;
+}
+
+.flex-container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px 10px 0px 10px;
+}
+
+.flex-container3 {
+  display: flex;
+  justify-content: center;
+  Margin-top: 50px;
+}
+
+.site-card-border-less-wrapper {
+  padding: 30px;
+  background: #ececec;
+}
+
+#non-subscriber {
+  border: solid rgb(90, 88, 88) 5px;
+  border-radius: 10px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 0px 10px; 
+}
+
+#subscriber {
+  border: solid rgb(90, 88, 88) 5px;
+  border-radius: 10px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 0px 10px;
+}
+
+#ex-subscriber {
+  border: solid rgb(90, 88, 88) 5px;
+  border-radius: 10px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 0px 10px;
+}
+
+#premium {
+  border: solid rgb(90, 88, 88) 5px;
+  border-radius: 10px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 0px 10px;
+}
+
+.button {
+  margin: 0px 25px 0px 25px; 
+}
