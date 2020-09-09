@@ -15,6 +15,7 @@ function App() {
         <Route path="/" component={Login} exact />
         <Route path="/Campaign-library" component={Campaignlibrary} exact />
         <Route path="/past-campaigns" component={Pastcampaigns} exact />
+        <Route path="/signup" component={Signup} exact />
       </Switch>
     </React.Fragment>
     </BrowserRouter>

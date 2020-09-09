@@ -64,9 +64,13 @@ const Login = () => {
         {" "}
         <Button className="buttons">Campaign Library</Button>{" "}
       </Link>{" "}
-      <Link to="past-campaigns">
+      <Link to="/past-campaigns">
         {" "}
         <Button className="buttons">Past Campaigns</Button>{" "}
+      </Link>
+      <Link to="/signup">
+        {" "}
+        <Button className="buttons">Sign up</Button>{" "}
       </Link>
      </div>
      

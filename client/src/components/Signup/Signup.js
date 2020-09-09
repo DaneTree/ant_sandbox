@@ -29,7 +29,7 @@ const Signup = () => {
     <>
       <img src="./images/logo.jpg" alt="Albuquerque Journal Logo" id="logo" />
       <div className="flex-container">
-        <div className="form-container">
+        <div className="form-container1">
           <Form
             labelCol={{
               span: 4,
@@ -76,7 +76,9 @@ const Signup = () => {
             </Form.Item>
           </Form>
         </div>
-        <div className="form-container">
+      </div>
+      <div className="flex-container">
+        <div className="form-container2">
           <Form
             labelCol={{
               span: 4,
@@ -98,50 +100,52 @@ const Signup = () => {
               <Input />
             </Form.Item>
             <Form.Item label="Delivery State">
-          <Cascader
-            options={[
-              {
-                value: 'California',
-                label: 'California'
-              },
-              {
-                value: 'Oregon',
-                label: 'Oregon'
-              },
-              {
-                value: 'Washington',
-                label: 'Washington'
-              }
-            ]}
-          />
-        </Form.Item>
+              <Cascader
+                options={[
+                  {
+                    value: "California",
+                    label: "California",
+                  },
+                  {
+                    value: "Oregon",
+                    label: "Oregon",
+                  },
+                  {
+                    value: "Washington",
+                    label: "Washington",
+                  },
+                ]}
+              />
+            </Form.Item>
             <Form.Item label="Billing Zipcode">
               <Input />
             </Form.Item>
             <Form.Item label="">
-            <Checkbox onChange={onChange}>Billing address same as Delivery address</Checkbox>
+              <Checkbox onChange={onChange}>
+                Billing address same as Delivery address
+              </Checkbox>
             </Form.Item>
             <Form.Item label="Cardholders Name">
               <Input />
             </Form.Item>
             <Form.Item label="Payment Type">
-          <Cascader
-            options={[
-              {
-                value: 'Visa',
-                label: 'Visa'
-              },
-              {
-                value: 'Mastercard',
-                label: 'Mastercard'
-              },
-              {
-                value: 'AMEX',
-                label: 'AMEX'
-              }
-            ]}
-          />
-        </Form.Item>
+              <Cascader
+                options={[
+                  {
+                    value: "Visa",
+                    label: "Visa",
+                  },
+                  {
+                    value: "Mastercard",
+                    label: "Mastercard",
+                  },
+                  {
+                    value: "AMEX",
+                    label: "AMEX",
+                  },
+                ]}
+              />
+            </Form.Item>
             <Form.Item label="Card Number">
               <Input />
             </Form.Item>
@@ -155,12 +159,14 @@ const Signup = () => {
               <Input />
             </Form.Item>
             <Form.Item label="">
-            <Checkbox onChange={onChange}>Agree to Privacy Policy</Checkbox>
+              <Checkbox onChange={onChange}>Agree to Privacy Policy</Checkbox>
             </Form.Item>
             <Form.Item label="">
-            <Checkbox onChange={onChange}>Sign Up For our Daily Newsletter</Checkbox>
+              <Checkbox onChange={onChange}>
+                Sign Up For our Daily Newsletter
+              </Checkbox>
             </Form.Item>
-            <Button> Continue </Button>
+            <Button id="continue"> Continue </Button>
           </Form>
         </div>
       </div>
