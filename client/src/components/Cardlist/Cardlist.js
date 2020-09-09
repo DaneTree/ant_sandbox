@@ -4,209 +4,59 @@ import "./Cardlist.css";
 import { Button, Card } from "antd";
 
 class Cardlist extends Component {
-  state = {};
+  state = {
+    campaignTitle: "Campaign Title goes here",
+    campaignGoal: "to confer 200 users by 20 July",
+    openDates: "12/21/2020 - 1/12/2021",
+    pageViews: 100,
+    conversionNumber: 200,
+    conversionPercent: 100,
+    aPercent: 12,
+    aName: "PAYWALL A NAME",
+    bPercent: 4,
+    bName: "PAYWALL B NAME"
+  };
 
   render() {
     return (
       <React.Fragment>
-        <div className="flex-container1">
-          <div id="non-subscriber">
-            <h1>Non-Subscriber</h1>
+
             <div className="site-card-border-less-wrapper">
               <Card
-                title="Campaign Title"
+                size="small"
+                title={this.state.campaignTitle}
                 bordered={false}
-                style={{ width: 300 }}
+                style={{ width: 200 }}
               >
                 <p>
-                  Campaign Goal: <span className="campaign-goal"> </span>{" "}
+                  <h5>Campaign goal {this.state.campaignGoal}</h5>{" "}
                 </p>
                 <p>
-                  Open Dates: <span className="open-dates"> </span>{" "}
+                  <b><h4>{this.state.openDates}</h4></b>{" "}
                 </p>
                 <p>
-                  # Page Views: <span className="page-views"> </span>{" "}
+                  {this.state.pageViews} Page Views{" "}
                 </p>
                 <p>
-                  # Conversions: <span className="conversions-number"> </span>{" "}
+                  {this.state.conversionNumber} Conversions{" "}
                 </p>
                 <p>
-                  % Conversions: <span className="conversion-percent"> </span>
+                  {this.state.conversionPercent}% Converted{" "}
                 </p>
                 <p>
-                  % Conversions Today:{" "}
-                  <span className="conversion-percent-today"> </span>
-                </p>
-                <p>
-                  A/B Tested Paywall Names:{" "}
+                  <b>A/B Test Paywalls</b>{" "}
                   <span className="ab-paywall-names"></span>
                 </p>
                 <p>
-                  A/B Tested Paywall Conversion Rate:{" "}
-                  <span className="ab-paywall-conversion"></span>
+                  <h5>{this.state.aPercent}% {" "} {this.state.aName}</h5>
                 </p>
                 <p>
-                  Paywall Name: <span className="paywall-name"></span>
+                  <h5>{this.state.bPercent}% {" "} {this.state.bName}</h5>
                 </p>
-                <p>
-                  Paywall Conversion Rate:{" "}
-                  <span className="paywall-conversion-rate"></span>
-                </p>
-                <Button type="danger">Unpublished</Button>
+                <Button id="unpublish">Unpublished</Button>
               </Card>
             </div>
-          </div>
-          <div id="subscriber">
-            <h1>Subscriber</h1>
-            <div className="site-card-border-less-wrapper">
-              <Card
-                title="Campaign Title"
-                bordered={false}
-                style={{ width: 300 }}
-              >
-                <p>
-                  Campaign Goal: <span className="campaign-goal"> </span>{" "}
-                </p>
-                <p>
-                  Open Dates: <span className="open-dates"> </span>{" "}
-                </p>
-                <p>
-                  # Page Views: <span className="page-views"> </span>{" "}
-                </p>
-                <p>
-                  # Conversions: <span className="conversions-number"> </span>{" "}
-                </p>
-                <p>
-                  % Conversions: <span className="conversion-percent"> </span>
-                </p>
-                <p>
-                  % Conversions Today:{" "}
-                  <span className="conversion-percent-today"> </span>
-                </p>
-                <p>
-                  A/B Tested Paywall Names:{" "}
-                  <span className="ab-paywall-names"></span>
-                </p>
-                <p>
-                  A/B Tested Paywall Conversion Rate:{" "}
-                  <span className="ab-paywall-conversion"></span>
-                </p>
-                <p>
-                  Paywall Name: <span className="paywall-name"></span>
-                </p>
-                <p>
-                  Paywall Conversion Rate:{" "}
-                  <span className="paywall-conversion-rate"></span>
-                </p>
-                <Button type="danger">Unpublished</Button>
-              </Card>
-            </div>
-          </div>
-        </div>
-        <div className="flex-container2">
-          <div id="ex-subscriber">
-            <h1>Ex-Subscriber</h1>
-            <div className="site-card-border-less-wrapper">
-              <Card
-                title="Campaign Title"
-                bordered={false}
-                style={{ width: 300 }}
-              >
-                <p>
-                  Campaign Goal: <span className="campaign-goal"> </span>{" "}
-                </p>
-                <p>
-                  Open Dates: <span className="open-dates"> </span>{" "}
-                </p>
-                <p>
-                  # Page Views: <span className="page-views"> </span>{" "}
-                </p>
-                <p>
-                  # Conversions: <span className="conversions-number"> </span>{" "}
-                </p>
-                <p>
-                  % Conversions: <span className="conversion-percent"> </span>
-                </p>
-                <p>
-                  % Conversions Today:{" "}
-                  <span className="conversion-percent-today"> </span>
-                </p>
-                <p>
-                  A/B Tested Paywall Names:{" "}
-                  <span className="ab-paywall-names"></span>
-                </p>
-                <p>
-                  A/B Tested Paywall Conversion Rate:{" "}
-                  <span className="ab-paywall-conversion"></span>
-                </p>
-                <p>
-                  Paywall Name: <span className="paywall-name"></span>
-                </p>
-                <p>
-                  Paywall Conversion Rate:{" "}
-                  <span className="paywall-conversion-rate"></span>
-                </p>
-                <Button type="danger">Unpublished</Button>
-              </Card>
-            </div>
-          </div>
-          <div id="premium">
-            <h1>Premium</h1>
-            <div className="site-card-border-less-wrapper">
-              <Card
-                title="Campaign Title"
-                bordered={false}
-                style={{ width: 300 }}
-              >
-                <p>
-                  Campaign Goal: <span className="campaign-goal"> </span>{" "}
-                </p>
-                <p>
-                  Open Dates: <span className="open-dates"> </span>{" "}
-                </p>
-                <p>
-                  # Page Views: <span className="page-views"> </span>{" "}
-                </p>
-                <p>
-                  # Conversions: <span className="conversions-number"> </span>{" "}
-                </p>
-                <p>
-                  % Conversions: <span className="conversion-percent"> </span>
-                </p>
-                <p>
-                  % Conversions Today:{" "}
-                  <span className="conversion-percent-today"> </span>
-                </p>
-                <p>
-                  A/B Tested Paywall Names:{" "}
-                  <span className="ab-paywall-names"></span>
-                </p>
-                <p>
-                  A/B Tested Paywall Conversion Rate:{" "}
-                  <span className="ab-paywall-conversion"></span>
-                </p>
-                <p>
-                  Paywall Name: <span className="paywall-name"></span>
-                </p>
-                <p>
-                  Paywall Conversion Rate:{" "}
-                  <span className="paywall-conversion-rate"></span>
-                </p>
-                <Button type="danger">Unpublished</Button>
-              </Card>
-            </div>
-          </div>
-        </div>
-        <div className="flex-container3">
-          <Link to="past-campaigns">
-            <Button type="primary" className="button">
-              Past Campaigns
-            </Button>
-          </Link>
-          <Button type="primary" className="button">
-            Create Campaign
-          </Button>
-        </div>
+          
       </React.Fragment>
     );
   }
