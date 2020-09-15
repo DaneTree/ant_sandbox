@@ -1,49 +1,24 @@
-#logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    margin-top: 50px;
-  }
-  
-  #logo {
-      height: 200px; 
-      width: 400px;
-  }
+@import "~antd/dist/antd.css";
+
 
   .flex-container {
     display: flex;
+    margin-top: 50px;
   }
 
   h3 {
     margin: 0px 30px 0px 80px;
   }
 
-  /* #non-subscriber {
-    margin-right: 50px;
-  }
-
-  #subscriber {
-    margin: 0px 120px 0px 100px;
-  }
-
-  #ex-subscriber {
-    margin: 0px 80px 0px 70px;
-  }
-
-  #premium {
-    margin-left: 90px;
-    margin-right: 30px;
-  } */
-
   .button-container {
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 20%;
     margin-top: 50px;
   }
   
   .buttons {
-    margin: 10px 10px 20px 20px;
+    margin-left: 30%;
+    margin-right: 50%;
   }

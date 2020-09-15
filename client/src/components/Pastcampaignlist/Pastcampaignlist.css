@@ -1,0 +1,15 @@
+.list-container {
+    border: solid rgb(90, 88, 88) 1px;
+    border-radius: 10px;
+    width: 900px;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 50%;
+  }
+
+  #details {
+      margin-left: 20px;
+  }

@@ -27,7 +27,6 @@ const Signup = () => {
 
   return (
     <>
-      <img src="./images/logo.jpg" alt="Albuquerque Journal Logo" id="logo" />
       <div className="flex-container">
         <div className="form-container1">
           <Form

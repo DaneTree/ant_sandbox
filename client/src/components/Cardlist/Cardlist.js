@@ -16,7 +16,7 @@ class Cardlist extends Component {
     bPercent: 4,
     bName: "PAYWALL B NAME",
     paywallName: "Paywall Name",
-    paywallConversion: "Paywall conversion rate"
+    paywallConversion: 100
   };
 
   render() {
@@ -59,9 +59,9 @@ class Cardlist extends Component {
                   <h4>{this.state.paywallName}</h4>
                 </p>
                 <p>
-                  <h4>{this.state.paywallConversion}</h4>
+                  <h4>Conversion Rate: {this.state.paywallConversion}%</h4>
                 </p>
-                <Button id="unpublish">Unpublished</Button>
+                <Button id="unpublish">Unpublish</Button>
               </Card>
             </div>
           

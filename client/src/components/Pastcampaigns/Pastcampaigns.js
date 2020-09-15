@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
 import "./Pastcampaigns.css";
 import Cardlist from "../Cardlist/Cardlist";
-import Simplelist from "../Simplelist/Simplelist";
-import { Button, Pagination } from 'antd';
+import Pastcampaignlist from "../Pastcampaignlist/Pastcampaignlist";
+import { Button } from 'antd';
 
 class Pastcampaigns extends Component {
   state = {};
@@ -11,14 +10,30 @@ class Pastcampaigns extends Component {
   render() {
     return (
       <div>
-        <img src="./images/logo.jpg" alt="Albuquerque Journal Logo" id="logo" />
-        <Cardlist />
-        <span></span>
-        <Simplelist />
-        <div calssName="button-container">
-          <Link to="/"><Button className="buttons">Login</Button></Link>
+        <div className="flex-container">
+          <div id="non-subscriber-container">
+            <h3 id="non-subscriber">Non-Subscriber</h3>
+            <Cardlist />
+          </div>
+          <div id="subscriber-container">
+            <h3 id="subscriber">Subscriber</h3>
+            <Cardlist />
+          </div>
+          <div id="ex-subscriber-container">
+            <h3 id="ex-subscriber">Ex-Subscriber</h3>
+            <Cardlist />
+          </div>
+          <div id="premium-container">
+            <h3 id="premium">Premium</h3>
+            <Cardlist />
+          </div>
         </div>
-        <Pagination className="pagination" simple defaultCurrent={1} total={1} />
+        <div className="button-container">
+          <Button className="buttons">Create Campaign</Button>
+        </div>
+        <Pastcampaignlist />
+        <Pastcampaignlist />
+        <Pastcampaignlist />
       </div>
     );
   }

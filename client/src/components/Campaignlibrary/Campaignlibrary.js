@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { Button } from "antd";
 import "./Campaignlibrary.css";
 import Cardlist from "../Cardlist/Cardlist";
-import Simplelist from "../Simplelist/Simplelist";
+import Unpublishedlist from "../Unpublishedlist/Unpublishedlist";
 
 class Campaignlibrary extends Component {
   state = {};
@@ -11,13 +10,7 @@ class Campaignlibrary extends Component {
   render() {
     return (
       <div>
-        <img src="./images/logo.jpg" alt="Albuquerque Journal Logo" id="logo" />
-        {/* <div className="flex-container">
-          <h3 id="non-subscriber">Non-Subscriber</h3>
-          <h3 id="subscriber">Subscriber</h3>
-          <h3 id="ex-subscriber">Ex-Subscriber</h3>
-          <h3 id="premium">Premium</h3>
-        </div> */}
+  
         <div className="flex-container">
           <div id="non-subscriber-container">
             <h3 id="non-subscriber">Non-Subscriber</h3>
@@ -36,13 +29,14 @@ class Campaignlibrary extends Component {
             <Cardlist />
           </div>
         </div>
+
         <span></span>
-        <Simplelist />
-        <div calssName="button-container">
-          <Link to="/">
-            <Button className="buttons">Login</Button>
-          </Link>
+         <div className="button-container">
+          <Button className="buttons">Create Campaign</Button>
         </div>
+        <Unpublishedlist />
+        <Unpublishedlist />
+        <Unpublishedlist />
       </div>
     );
   }
