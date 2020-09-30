@@ -10,9 +10,13 @@ const Login = () => {
     setComponentSize(size);
   };
 
-  const click = () => {
-    alert("You clicked me!!");
+  const submit = () => {
+    console.log(`email: ${email}, password: ${password}`)
   };
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
 
   //   const validEmailRegex =
   //   RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
@@ -36,18 +40,14 @@ const Login = () => {
             onValuesChange={onFormLayoutChange}
             size={componentSize}
           >
-            <Form.Item label="Email">
-              <Input />
+            <Form.Item label="Email" value={email}>
+              <Input onChange={event => setEmail(event.target.value)} />
             </Form.Item>
-
-            <Form.Item label="Password">
-              <Input />
+            <Form.Item label="Password" value={password}>
+              <Input onChange={event => setPassword(event.target.value)} />
             </Form.Item>
-
-            {/* <button onClick={ click()}> click </button> */}
-
             <Form.Item label="" style={{ paddingLeft: "150px" }}>
-              <Button type="primary" onClick={() => click()}>
+              <Button type="primary" onClick={() => submit()}>
                 Log In
               </Button>
             </Form.Item>
@@ -70,6 +70,14 @@ const Login = () => {
       <Link to="/signup">
         {" "}
         <Button className="buttons">Sign up</Button>{" "}
+      </Link>
+      <Link to="/lookup-subscriber">
+        {" "}
+        <Button className="buttons">Lookup Subscriber</Button>{" "}
+      </Link>
+      <Link to="/user-management">
+        {" "}
+        <Button className="buttons">User Management</Button>{" "}
       </Link>
      </div>
      

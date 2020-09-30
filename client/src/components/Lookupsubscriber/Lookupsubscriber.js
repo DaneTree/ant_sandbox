@@ -1,14 +1,18 @@
 import "./Lookupsubscriber.css";
 import React, { useState } from "react";
 import { Form, Input, Button } from "antd";
+import Returnedsubscriber from "./Returnedsubscriber/Returnedsubscriber";
 
-const Login = () => {
+const Lookupsubscriber = () => {
   const [componentSize, setComponentSize] = useState("default");
 
   const onFormLayoutChange = ({ size }) => {
     setComponentSize(size);
   };
 
+  const [display, setDisplay] = React.useState(false)
+
+  const toggleDisplay = () => !display ? setDisplay(true) : setDisplay(false)
   //   const validEmailRegex =
   //   RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
 
@@ -38,14 +42,16 @@ const Login = () => {
               <Input />
             </Form.Item>
             <Form.Item label="" style={{ paddingLeft: "150px" }}>
-              <Button>submit</Button>
+              <Button onClick={() => toggleDisplay() }>submit</Button>
             </Form.Item>
           </Form>
         </div>
       </div>
 
-      <div className="returned-results-container">
-          
+      <div className="returned-results-grid">
+          <div className="result-1">
+            { display ? <Returnedsubscriber /> : null }
+          </div>
       </div>    
     </div>
   );
@@ -53,4 +59,4 @@ const Login = () => {
 
 // ReactDOM.render(<FormSizeDemo />, mountNode);
 
-export default Login;
+export default Lookupsubscriber;

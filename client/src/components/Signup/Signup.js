@@ -209,6 +209,4 @@ function onCascadeChange(value) {
     );
 }
 
-// ReactDOM.render(<FormSizeDemo />, mountNode);
-
 export default Signup;

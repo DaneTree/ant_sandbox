@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Button } from "antd";
 import "./Campaignlibrary.css";
 import Cardlist from "../Cardlist/Cardlist";
-import Unpublishedlist from "../Unpublishedlist/Unpublishedlist";
+import Unpublishedlist from "./Unpublishedlist/Unpublishedlist";
 
 class Campaignlibrary extends Component {
   state = {};

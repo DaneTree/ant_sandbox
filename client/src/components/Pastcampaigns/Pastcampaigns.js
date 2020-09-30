@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Pastcampaigns.css";
 import Cardlist from "../Cardlist/Cardlist";
-import Pastcampaignlist from "../Pastcampaignlist/Pastcampaignlist";
+import Pastcampaignlist from "./Pastcampaignlist/Pastcampaignlist";
 import { Button } from 'antd';
 
 class Pastcampaigns extends Component {

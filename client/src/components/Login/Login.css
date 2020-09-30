@@ -2,7 +2,8 @@
 
 
 .form-container {
-  border: solid rgb(90, 88, 88) 1px;
+  border: solid rgb(201, 194, 194) 1px;
+  /* border: solid rgb(90, 88, 88) 1px; */
   border-radius: 10px;
   width: 900px;
   margin-top: 100px;
